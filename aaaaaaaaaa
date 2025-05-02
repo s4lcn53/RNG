@@ -56,7 +56,6 @@ function Auto_Click()
                local clickDetector = clickHitbox:FindFirstChild("ClickDetector")
                if clickDetector then
                    fireclickdetector(clickDetector)
-               print("Clicked")
                end
            end
        task.wait(0.0001)
