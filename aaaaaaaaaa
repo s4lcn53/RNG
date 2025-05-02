@@ -63,12 +63,6 @@ function Auto_Click()
    end   
 end
 
-
-
-local Upd = Window:CreateTab(" 📜 Update Log")
-local Paragraph = Upd:CreateParagraph({Title = "Update Log :", Content = "- Auto Click sans and another shit idk"})
-local Label = Upd:CreateLabel("Note : Use in private server for best performance ✅", nil, Color3.fromRGB(255, 255, 255), false)
-
 -- Tab/ etc
 local Tab = Window:CreateTab(" ☠️ Main") -- Title, Image
 local Section = Tab:CreateSection("If you enabled this. Don't equip weapon equip only accessories or misc cuz it'll glitch ⚠️")
