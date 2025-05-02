@@ -104,8 +104,8 @@ local Label = Tab:CreateLabel("How to use : just enabled anti-afk first and then
 
 
 -- Tab 2
-local Tab = Window:CreateTab("👌 Misc", 4483362458)
-
+local MainTab = Window:CreateTab("👌 Misc")
+local Section = MainTab:CreateSection("Mod")
 local Slider = MainTab:CreateSlider({
    Name = "WalkSpeed Slider",
    Range = {1, 350},
@@ -141,7 +141,7 @@ if _G.infinJumpStarted == nil then
 	_G.infinJumpStarted = true
 	
 	--Notifies readiness
-	game.StarterGui:SetCore("SendNotification", {Title="DinoHub"; Text="Infinite Jump Activated!"; Duration=5;})
+	game.StarterGui:SetCore("SendNotification", {Title="DinoHub"; Text="Done !"; Duration=5;})
 
 	--The actuainfinite jump
 	local plr = game:GetService('Players').LocalPlayer
@@ -158,4 +158,12 @@ if _G.infinJumpStarted == nil then
 	end)
 end
    end,
+})
+
+-- button 2
+local Button = MainTab:CreateButton({
+   Name = "Destroy UI",
+   Callback = function()
+    Rayfield:Destroy()
+end,
 })
