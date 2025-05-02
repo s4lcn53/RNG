@@ -58,7 +58,7 @@ function Auto_Click()
                    fireclickdetector(clickDetector)
                end
            end
-       task.wait(0.001)
+       task.wait(.00001)
       end
    end   
 end
