@@ -59,7 +59,7 @@ function Auto_Click()
                print("Clicked")
                end
            end
-       task.wait(0.0000000001)
+       task.wait(0.000001)
       end
    end   
 end
