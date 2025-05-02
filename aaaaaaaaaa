@@ -89,6 +89,7 @@ local Toggle = Tab:CreateToggle({
 
 
 -- Buttons
+local Section = Tab:CreateSection("Optimized")
 local Button1 = Tab:CreateButton({
    Name = "Anti AFK",
    Callback = function()
