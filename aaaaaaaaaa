@@ -92,7 +92,7 @@ local Section = Tab:CreateSection("Optimized")
 local Button1 = Tab:CreateButton({
    Name = "Anti AFK",
    Callback = function()
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/s4lcn53/AntiAFK/refs/heads/main/a"))()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Genesisuii/Genesisuii/refs/heads/main/Anti%20AFK%20script", true))()
 end,
 })
 
