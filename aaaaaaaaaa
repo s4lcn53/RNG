@@ -138,7 +138,7 @@ local Slider = MainTab:CreateSlider({
 })
 
 --buttons
-local Button2 = MainTab:CreateButton({
+local Button = MainTab:CreateButton({
    Name = "Infinite Jump!",
    Callback = function()
        --Toggles the infinite jump between on or off on every script run
@@ -168,7 +168,7 @@ end
    end,
 })
 
-local Button3 = MainTab:CreateButton({
+local Button = MainTab:CreateButton({
    Name = "Destroy UI",
    Callback = function()
       Rayfield:Destroy()
