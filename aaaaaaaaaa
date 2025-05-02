@@ -19,7 +19,7 @@ local Window = Rayfield:CreateWindow({
    },
 
    Discord = {
-      Enabled = true,
+      Enabled = false,
       Invite = "discord.gg/Jb34zXH3RN",
       RememberJoins = true
    },
@@ -72,7 +72,7 @@ local Label = Upd:CreateLabel("Note : Use in private server for best performance
 
 -- Tab/ etc
 local Tab = Window:CreateTab(" ☠️ Main") -- Title, Image
-local Section = Tab:CreateSection("If you enabled this. Don't use weapon use only accessories cuz it'll glitch ⚠️")
+local Section = Tab:CreateSection("If you enabled this. Don't equip weapon equip only accessories or misc cuz it'll glitch ⚠️")
 
 
 -- Toggles
@@ -93,7 +93,7 @@ local Section = Tab:CreateSection("Optimized")
 local Button1 = Tab:CreateButton({
    Name = "Anti AFK",
    Callback = function()
-   
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/s4lcn53/AntiAFK/refs/heads/main/a"))()
 end,
 })
 
@@ -107,13 +107,7 @@ local Button = Tab:CreateButton({
 end,
 })
 
-local Label = Tab:CreateLabel("Anti AFK not working rn just using on click ✅", nil, Color3.fromRGB(255, 255, 255), false)
-
-
-
-
-
-
+local Label = Tab:CreateLabel("How to use : just enabled anti-afk first and then click all sans ✅", nil, Color3.fromRGB(255, 255, 255), false)
 
 -- Tab2/ etc
 local MainTab = Window:CreateTab(" 👌 Misc")
