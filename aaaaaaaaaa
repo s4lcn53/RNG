@@ -118,7 +118,7 @@ local Label = Tab:CreateLabel("Work best with accessories", nil, Color3.fromRGB(
 local MainTab = Window:CreateTab("👌 Misc")
 local Section = MainTab:CreateSection("Mod")
 local Slider = MainTab:CreateSlider({
-   Name = "WalkSpeed Slider",
+   Name = "WalkSpeed",
    Range = {1, 350},
    Increment = 1,
    Suffix = "Speed",
@@ -130,7 +130,7 @@ local Slider = MainTab:CreateSlider({
 })
 
 local Slider = MainTab:CreateSlider({
-   Name = "JumpPower Slider",
+   Name = "JumpPower",
    Range = {1, 350},
    Increment = 1,
    Suffix = "Jump",
@@ -142,7 +142,7 @@ local Slider = MainTab:CreateSlider({
 })
 
 local Button = MainTab:CreateButton({
-   Name = "Infinite Jump Toggle",
+   Name = "Infinite Jump",
    Callback = function()
        --Toggles the infinite jump between on or off on every script run
 _G.infinjump = not _G.infinjump
