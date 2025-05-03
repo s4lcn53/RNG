@@ -93,6 +93,14 @@ end,
 })
 
 local Button2 = Tab:CreateButton({
+   Name = "Delete All effect",
+   Callback = function()
+     local w = game.Workspace:FindFirstChild("Attack")
+    w:Destroy()
+end,
+})
+
+local Button3 = Tab:CreateButton({
    Name = "Remove Texture",
    Callback = function()
        for i,v in next,(workspace:GetDescendants()) do
@@ -110,7 +118,7 @@ local Label = Tab:CreateLabel("Work best with accessories", nil, Color3.fromRGB(
 local MainTab = Window:CreateTab("👌 Misc")
 local Section = MainTab:CreateSection("Mod")
 local Slider = MainTab:CreateSlider({
-   Name = "WalkSpeed",
+   Name = "WalkSpeed Slider",
    Range = {1, 350},
    Increment = 1,
    Suffix = "Speed",
@@ -122,7 +130,7 @@ local Slider = MainTab:CreateSlider({
 })
 
 local Slider = MainTab:CreateSlider({
-   Name = "JumpPower",
+   Name = "JumpPower Slider",
    Range = {1, 350},
    Increment = 1,
    Suffix = "Jump",
@@ -134,7 +142,7 @@ local Slider = MainTab:CreateSlider({
 })
 
 local Button = MainTab:CreateButton({
-   Name = "Infinite Jump",
+   Name = "Infinite Jump Toggle",
    Callback = function()
        --Toggles the infinite jump between on or off on every script run
 _G.infinjump = not _G.infinjump
