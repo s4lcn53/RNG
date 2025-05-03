@@ -92,13 +92,21 @@ local Button1 = Tab:CreateButton({
 end,
 })
 
-local Button = Tab:CreateButton({
+local Button2 = Tab:CreateButton({
    Name = "Remove Texture",
    Callback = function()
        for i,v in next,(workspace:GetDescendants()) do
        if v:IsA("Part") then v.Material = Enum.Material.SmoothPlastic
        end
     end
+end,
+})
+
+local Button3 = Tab:CreateButton({
+   Name = "Remove Texture",
+   Callback = function()
+     local w = game.Workspace:WaitForChild("Attack")
+    w:Destroy()
 end,
 })
 
