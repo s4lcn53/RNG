@@ -100,7 +100,7 @@ local Button = Tab:CreateButton({
 end,
 })
 
-local Label = Tab:CreateLabel("How to use : just enabled anti-afk first and then click all sans ✅", nil, Color3.fromRGB(255, 255, 255), false)
+local Label = Tab:CreateLabel("How to use : just enabled click all sans and then anti-afk ✅", nil, Color3.fromRGB(255, 255, 255), false)
 
 
 -- Tab 2
