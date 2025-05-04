@@ -9,7 +9,7 @@ local Window = Rayfield:CreateWindow({
    Name = "S",
    Icon = 0,
    LoadingTitle = "Loading...",
-   LoadingSubtitle = "by DinoLive3009",
+   LoadingSubtitle = "by Unknown",
    Theme = "Ocean",
 
    DisableRayfieldPrompts = false,
