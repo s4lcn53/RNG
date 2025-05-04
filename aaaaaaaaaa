@@ -48,11 +48,12 @@ Rayfield:Notify({
 })
 
 -- Main
-_G.Auto_Click = true
+getgenv().Auto_Click = true;
 
 --Function
 function Auto_Click()
-   while _G.Auto_Click == true and task.wait(0.00001) do
+   while task.wait(0.00001) do
+       if getgenv().Auto_Click == true then
        for _, model in pairs(workspace.Sanses:GetChildren()) do
            local clickHitbox = model:FindFirstChild("ClickHitbox")
            if clickHitbox then
@@ -63,7 +64,8 @@ function Auto_Click()
            end
            task.wait(0.00001)
       end
-   end   
+   end
+  end
 end
 
 -- Tab/ etc
@@ -77,7 +79,7 @@ local Toggle = Tab:CreateToggle({
    CurrentValue = false,
    Flag = "Click", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
    Callback = function(Value)
-      _G.Auto_Click = Value
+      getgenv().Auto_Click = Value
       Auto_Click()
    end,
 })
