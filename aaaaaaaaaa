@@ -6,7 +6,7 @@ local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 -- Create Window
 local Window = Rayfield:CreateWindow({
-   Name = "S",
+   Name = "Unknown",
    Icon = 0,
    LoadingTitle = "Loading...",
    LoadingSubtitle = "by Unknown",
@@ -16,9 +16,9 @@ local Window = Rayfield:CreateWindow({
    DisableBuildWarnings = false,
 
    ConfigurationSaving = {
-      Enabled = true,
+      Enabled = false,
       FolderName = nil,
-      FileName = "DinoHub"
+      FileName = "Hentai"
    },
 
    Discord = {
