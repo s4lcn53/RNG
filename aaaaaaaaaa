@@ -6,7 +6,7 @@ local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 -- Create Window
 local Window = Rayfield:CreateWindow({
-   Name = "(x2 Luck) typical.rng (Alpha)",
+   Name = "S",
    Icon = 0,
    LoadingTitle = "Loading...",
    LoadingSubtitle = "by DinoLive3009",
