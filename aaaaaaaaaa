@@ -1,3 +1,4 @@
+-- bruh skidder just rayfield nothings special
 -- loadstring
 if game.PlaceId == 91694942823334 then
 print("Work game")
@@ -93,14 +94,6 @@ end,
 })
 
 local Button2 = Tab:CreateButton({
-   Name = "Delete All effect",
-   Callback = function()
-     local w = game.Workspace:FindFirstChild("Attack")
-    w:Destroy()
-end,
-})
-
-local Button3 = Tab:CreateButton({
    Name = "Remove Texture",
    Callback = function()
        for i,v in next,(workspace:GetDescendants()) do
