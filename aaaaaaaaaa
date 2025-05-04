@@ -68,7 +68,7 @@ end
 
 -- Tab/ etc
 local Tab = Window:CreateTab(" ☠️ Main") -- Title, Image
-local Section = Tab:CreateSection("If you enabled this. Don't equip weapon equip only accessories or misc cuz it'll glitch ⚠️")
+local Section = Tab:CreateSection("Don't use weapon while toggle this! or it might bug")
 
 
 -- Toggles
