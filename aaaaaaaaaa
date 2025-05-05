@@ -69,9 +69,8 @@ function Auto_Click()
 end
 
 -- Tab/ etc
-local Tab = Window:CreateTab(" ☠️ Main") -- Title, Image
-local Section = Tab:CreateSection("Don't use weapon while toggle this! or it might bug")
-
+local Tab = Window:CreateTab("☠️ Main") -- Title, Image
+local Section = Tab:CreateSection("Just clicking sans no boost dmg")
 
 -- Toggles
 local Toggle = Tab:CreateToggle({
@@ -102,6 +101,14 @@ local Button2 = Tab:CreateButton({
        if v:IsA("Part") then v.Material = Enum.Material.SmoothPlastic
        end
     end
+end,
+})
+
+local Button3 = Tab:CreateButton({
+   Name = "Delete all effect",
+   Callback = function()
+       local a = game.Workspace:FindFirstChild("Attack")
+       a:Destroy()
 end,
 })
 
