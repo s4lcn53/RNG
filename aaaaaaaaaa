@@ -55,9 +55,9 @@ function Auto_Click()
    while task.wait(0.00001) do
        if getgenv().Auto_Click == true then
        for _, model in pairs(workspace.Sanses:GetChildren()) do
-           local clickHitbox = model:FindFirstChildWhichIsA("ClickHitbox")
+           local clickHitbox = model:FindFirstChild("ClickHitbox")
            if clickHitbox then
-               local clickDetector = clickHitbox:FindFirstChild("ClickDetector")
+               local clickDetector = clickHitbox:FindFirstChildWhichIsA("ClickDetector")
                if clickDetector then
                    fireclickdetector(clickDetector)
                end
