@@ -1,6 +1,9 @@
 -- bruh skidder just rayfield nothings special
 
+
 -- loadstring
+
+if game.PlaceId == 91694942823334 then
 print("Work game")
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
@@ -200,3 +203,5 @@ local Button = MainTab:CreateButton({
     Rayfield:Destroy()
 end,
 })
+
+end
