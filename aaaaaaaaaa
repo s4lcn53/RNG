@@ -1,4 +1,5 @@
 -- bruh skidder just rayfield nothings special
+
 -- loadstring
 if game.PlaceId == 91694942823334 then
 print("Work game")
@@ -7,10 +8,13 @@ local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 -- Create Window
 local Window = Rayfield:CreateWindow({
    Name = "Unknown",
-   Icon = 0,
+   Icon = 86418345950386,
    LoadingTitle = "Loading...",
    LoadingSubtitle = "by Unknown",
+   ShowText = "Unknown",
    Theme = "Ocean",
+
+   ToggleUIKeybind = Enum.KeyCode.RightControl,
 
    DisableRayfieldPrompts = false,
    DisableBuildWarnings = false,
@@ -49,6 +53,7 @@ Rayfield:Notify({
 
 -- Main
 getgenv().Auto_Click = true;
+getgenv().AntiAFK = true;
 
 --Function
 function Auto_Click()
@@ -68,6 +73,17 @@ function Auto_Click()
   end
 end
 
+function AntiAFK()
+task.spawn(function()
+    while task.wait(10) do
+     local VirtualUser = game:GetService("VirtualUser")
+      VirtualUser:CaptureController()
+      VirtualUser:ClickButton2(Vector2.new())
+      print('n')
+      end
+    end)
+end
+
 -- Tab/ etc
 local Tab = Window:CreateTab("☠️ Main") -- Title, Image
 local Section = Tab:CreateSection("Just clicking sans no boost dmg")
@@ -83,16 +99,19 @@ local Toggle = Tab:CreateToggle({
    end,
 })
 
-
+local Section = Tab:CreateSection("This will prevent you from being kicked when AFK")
 
 -- Buttons
-local Section = Tab:CreateSection("Optimized")
-local Button1 = Tab:CreateButton({
+local Toggle2 = Tab:CreateToggle({
    Name = "Anti AFK",
-   Callback = function()
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/s4lcn53/AntiAFK/refs/heads/main/a", true))()
-end,
+   CurrentValue = false,
+   Callback = function(Value)
+      getgenv().AntiAFK = Value
+      AntiAFK()
+   end,
 })
+
+local Section = Tab:CreateSection("Another...")
 
 local Button2 = Tab:CreateButton({
    Name = "Remove Texture",
@@ -112,8 +131,8 @@ local Button3 = Tab:CreateButton({
 end,
 })
 
-local Label = Tab:CreateLabel("How to use : just enabled click all sans and then anti-afk ✅", nil, Color3.fromRGB(255, 255, 255), false)
-local Label = Tab:CreateLabel("Work best with accessories", nil, Color3.fromRGB(255, 255, 255), false)
+local Label = Tab:CreateLabel("How to use : just enabled click all sans and then anti-afk ✅", nil, false)
+local Label = Tab:CreateLabel("Work best with accessories", nil, false)
 
 
 -- Tab 2
@@ -121,7 +140,7 @@ local MainTab = Window:CreateTab("👌 Misc")
 local Section = MainTab:CreateSection("Mod")
 local Slider = MainTab:CreateSlider({
    Name = "WalkSpeed",
-   Range = {1, 350},
+   Range = {1, 1000},
    Increment = 1,
    Suffix = "Speed",
    CurrentValue = 16,
@@ -131,6 +150,7 @@ local Slider = MainTab:CreateSlider({
    end,
 })
 
+-- JUst a slider
 local Slider = MainTab:CreateSlider({
    Name = "JumpPower",
    Range = {1, 350},
@@ -143,6 +163,7 @@ local Slider = MainTab:CreateSlider({
    end,
 })
 
+-- Inf jump
 local Button = MainTab:CreateButton({
    Name = "Infinite Jump",
    Callback = function()
@@ -173,7 +194,7 @@ end
    end,
 })
 
--- button 2
+-- Destroy UI
 local Button = MainTab:CreateButton({
    Name = "Destroy UI",
    Callback = function()
