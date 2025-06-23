@@ -9,17 +9,17 @@ local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 -- Create Window
 local Window = Rayfield:CreateWindow({
-   Name = "Unknown",
+   Name = "DinoHub",
    Icon = 86418345950386,
    LoadingTitle = "Loading...",
-   LoadingSubtitle = "by Unknown",
-   ShowText = "Unknown",
+   LoadingSubtitle = "by DinoLive3009",
+   ShowText = "DinoLive3009",
    Theme = "Ocean",
 
    ToggleUIKeybind = Enum.KeyCode.RightControl,
 
-   DisableRayfieldPrompts = false,
-   DisableBuildWarnings = false,
+   DisableRayfieldPrompts = true,
+   DisableBuildWarnings = true,
 
    ConfigurationSaving = {
       Enabled = false,
